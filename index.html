@@ -1,1 +1,71 @@
-<h1>aaa</h1>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="함께 일하고 싶은 개발자 이주석의 포트폴리오" />
+  <meta property="og:title" content="이주석 | Backend · AI Portfolio" />
+  <meta property="og:description" content="Spring, Java, FastAPI, RAG, WebRTC, LangGraph 기반 프로젝트 포트폴리오" />
+  <meta property="og:type" content="website" />
+  <title>이주석 | Backend · AI Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="brand" href="#top">Lee Ju Seok</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="assets/portfolio_lee_juseok.pdf" target="_blank" rel="noopener">PDF</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Backend · AI · Collaboration</p>
+        <h1>함께 일하고 싶은 개발자<br />이주석입니다.</h1>
+        <p class="lead">코드를 짜기 전에 문제를 먼저 고민합니다. 팀이 함께 이해하고 기여할 수 있는 환경을 만드는 협업을 지향합니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="assets/portfolio_lee_juseok.pdf" target="_blank" rel="noopener">포트폴리오 PDF 보기</a>
+          <a class="button secondary" href="https://github.com/commentLee" target="_blank" rel="noopener">GitHub</a>
+          <a class="button secondary" href="https://velog.io/@comment" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="프로필 요약">
+        <div class="avatar" aria-hidden="true">JS</div>
+        <dl>
+          <div><dt>Education</dt><dd>전북대학교 컴퓨터공학부</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:1231js@naver.com">1231js@naver.com</a></dd></div>
+          <div><dt>Primary Stack</dt><dd>Spring · Java · MySQL</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section stats" aria-label="핵심 성과">
+      <article><strong>96.9%</strong><span>SSAFY AI Challenge 최종 정확도</span></article>
+      <article><strong>4 / 244</strong><span>SSAFY AI Challenge 최종 순위</span></article>
+      <article><strong>4h → 1h</strong><span>VLM 평가 대시보드 도입 후 평가 시간 단축</span></article>
+      <article><strong>30%</strong><span>AI 회의 보조 응답 시간 평균 단축</span></article>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading"><p class="eyebrow">Selected Projects</p><h2>문제 해결 중심의 프로젝트</h2></div>
+      <div class="project-grid">
+        <article class="project-card featured"><div class="project-meta">2026.02 - 2026.04 · Samsung VD x SSAFY</div><h3>VLM과 RAG를 활용한 공정 이미지 분석 자동화</h3><p>TV 조립 공정 이미지를 설명하는 VLM 제작을 위해 합성 데이터 생성 파이프라인과 평가 대시보드를 구축했습니다.</p><ul><li>LLM-as-a-Judge 기반 VLM 평가 체계 제안 및 대시보드 구현</li><li>RAG 결과, Grad-CAM, 캡션, 평가 reasoning 추적 기능 개발</li><li>평가 시간 4시간에서 1시간으로 단축, 1만 개 합성 데이터 생성</li></ul><p class="stack">FastAPI · Python · Redis · PostgreSQL · FAISS · Qwen · Kimi · Gemma</p></article>
+        <article class="project-card"><div class="project-meta">2026.01 - 2026.02</div><h3>RE:MEET - 그리운 사람과 함께하는 웹 포토부스</h3><p>사진과 음성을 기반으로 AI 동반자를 복원하고, 여러 사용자가 같은 웹 포토부스에서 촬영하는 서비스를 개발했습니다.</p><ul><li>WebSocket 기반 WebRTC P2P 시그널링 서버 직접 구현</li><li>방 상태 공유, 촬영 단계 제어, 이미지 처리 파이프라인 구축</li><li>썸네일 최적화로 앨범 로딩 100ms 이내 단축</li></ul><p class="stack">Spring · WebRTC · JPA · QueryDSL · Redis · MySQL · FastAPI · Docker</p></article>
+        <article class="project-card"><div class="project-meta">2026.04 - 2026.05</div><h3>COMEET - 문서, 회의 음성, 일정을 연결하는 AI 회의 비서</h3><p>회의 자료와 음성 기록을 기반으로 용어 설명, 문서 검색, 요약, 일정 등록을 지원하는 AI 회의 보조 서비스를 설계했습니다.</p><ul><li>LangGraph와 OpenClaw 기반 도구 호출 및 응답 경로 제어</li><li>STT 음성 인식과 LLM 보정 파이프라인 구현</li><li>발화 의도 분류 85%, 검색·조사 응답 시간 평균 30% 단축</li></ul><p class="stack">FastAPI · Node.js · Python · Redis · PostgreSQL · LangGraph · Qdrant · Tauri</p></article>
+        <article class="project-card"><div class="project-meta">2025.10 · SSAFY 14기 AI Challenge</div><h3>VQA 모델 탐색 및 최적화</h3><p>A100 40GB VRAM 제약 내에서 VQA 성능이 높은 VLM을 사전 분석하고, Qwen3-VL-32B를 선정했습니다.</p><ul><li>모델 파라미터와 정밀도 기준 VRAM 사용량 계산</li><li>General VQA 벤치마크 중심 후보 모델 비교</li><li>최종 96.9%, 244팀 중 4위 달성</li></ul><p class="stack">Qwen3-VL · Python · 4-bit Quantization · Prompting</p></article>
+      </div>
+    </section>
+
+    <section id="skills" class="section split"><div><p class="eyebrow">Skills</p><h2>기술 역량</h2></div><div class="skill-list"><article><h3>Strong</h3><p>Spring, Java, MySQL</p><span>AI 도움 없이도 개발 가능</span></article><article><h3>Intermediate</h3><p>FastAPI, Python, LangChain, JavaScript</p><span>프로젝트 활용 경험 보유</span></article><article><h3>Basic</h3><p>Vue.js, CSS</p><span>기본 개념 이해 및 AI 활용 개발 가능</span></article></div></section>
+    <section id="awards" class="section split muted"><div><p class="eyebrow">Awards & Certificates</p><h2>수상 및 자격</h2></div><div class="timeline"><article><time>2026</time><p>삼성전자 VD · 네트워크사업부 - SSAFY 연계 프로젝트 우수상</p></article><article><time>2026</time><p>프로젝트 우수상 - 그리운 사람과 함께하는 웹 포토부스 서비스</p></article><article><time>2026</time><p>삼성 청년 SW·AI 아카데미 1학기 성적우수상</p></article><article><time>2025</time><p>삼성 SW 역량테스트 PRO등급 · TOEIC Speaking IM2</p></article><article><time>2023</time><p>정보처리기사</p></article></div></section>
+    <section class="section contact-cta"><h2>PDF 포트폴리오</h2><p>상세 프로젝트 설명과 문제 해결 과정은 PDF 포트폴리오에서 확인할 수 있습니다.</p><a class="button primary" href="assets/portfolio_lee_juseok.pdf" target="_blank" rel="noopener">PDF 열기</a></section>
+  </main>
+  <footer class="footer"><span>© 2026 Lee Ju Seok</span><span><a href="mailto:1231js@naver.com">1231js@naver.com</a></span></footer>
+</body>
+</html>
